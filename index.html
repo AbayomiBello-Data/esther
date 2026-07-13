@@ -1,0 +1,974 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>Happy Birthday Esther ❤️</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<style>
+
+*{
+box-sizing:border-box;
+}
+
+
+body{
+
+margin:0;
+min-height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+background:linear-gradient(135deg,#ff758c,#ff7eb3);
+font-family:Arial,sans-serif;
+color:white;
+overflow-x:hidden;
+
+}
+
+
+
+.container{
+
+width:90%;
+max-width:700px;
+background:rgba(255,255,255,.20);
+backdrop-filter:blur(15px);
+padding:35px;
+border-radius:30px;
+text-align:center;
+box-shadow:0 10px 40px rgba(0,0,0,.3);
+
+}
+
+
+
+h1{
+
+font-size:40px;
+
+}
+
+
+
+h2{
+
+font-size:28px;
+
+}
+
+
+
+p{
+
+font-size:20px;
+line-height:1.7;
+
+}
+
+
+
+button{
+
+background:white;
+color:#ff4f81;
+border:none;
+padding:15px 30px;
+border-radius:40px;
+font-size:18px;
+cursor:pointer;
+margin-top:20px;
+transition:.3s;
+
+}
+
+
+
+button:hover{
+
+transform:scale(1.1);
+
+}
+
+
+
+.hidden{
+
+display:none;
+
+}
+
+
+
+/* MEMORY GALLERY */
+
+
+#gallery{
+
+display:flex;
+flex-direction:column;
+gap:30px;
+align-items:center;
+
+}
+
+
+
+.memory{
+
+width:100%;
+background:rgba(255,255,255,.15);
+padding:20px;
+border-radius:25px;
+
+}
+
+
+
+.photo{
+
+width:250px;
+height:250px;
+border-radius:20px;
+object-fit:cover;
+border:5px solid white;
+transition:.5s;
+
+}
+
+
+
+.photo:hover{
+
+transform:scale(1.05);
+
+}
+
+
+
+.caption{
+
+font-size:18px;
+
+}
+
+
+
+
+/* FALLING HEARTS */
+
+
+.heart{
+
+position:fixed;
+bottom:-30px;
+z-index:9999;
+pointer-events:none;
+animation:rise 8s linear forwards;
+
+}
+
+
+
+@keyframes rise{
+
+
+from{
+
+transform:translateY(0);
+opacity:1;
+
+}
+
+
+to{
+
+transform:translateY(-110vh);
+opacity:0;
+
+}
+
+
+}
+
+
+
+
+@media(max-width:600px){
+
+
+h1{
+
+font-size:30px;
+
+}
+
+
+p{
+
+font-size:17px;
+
+}
+
+
+.photo{
+
+width:200px;
+height:200px;
+
+}
+
+
+}
+
+
+
+</style>
+
+</head>
+
+
+<body>
+
+
+
+<div class="container">
+
+
+
+<div id="countdownPage">
+
+
+<h1>
+Something Special For Esther ❤️
+</h1>
+
+
+<p>
+Counting every second until your birthday...
+</p>
+
+
+<h2 id="countdown"></h2>
+
+
+</div>
+
+
+
+
+
+<div id="start" class="hidden">
+
+
+<h1>
+Happy Birthday Esther ❤️
+</h1>
+
+
+<p>
+I made something special for you.
+</p>
+
+
+<button onclick="openMessage()">
+
+Open My Heart ❤️
+
+</button>
+
+
+</div>
+
+
+
+
+
+<div id="message" class="hidden">
+
+
+<h1>
+A Message From Me 🎥
+</h1>
+
+
+<p>
+Before reading my words, I want you to hear this message.
+</p>
+
+
+
+<a href="https://youtube.com/shorts/W1NL21CiadU?feature=share" target="_blank">
+
+<button>
+▶ Watch My Video Message
+</button>
+
+</a>
+
+
+<br>
+
+
+<button onclick="letter()">
+
+Continue ❤️
+
+</button>
+
+
+</div>
+
+
+
+
+
+
+<div id="letter" class="hidden">
+
+
+<h1>
+For Esther 💌
+</h1>
+
+
+<p id="typing"></p>
+
+
+
+<button onclick="photos()">
+
+Our Memories 📸
+
+</button>
+
+
+</div>
+<!-- MEMORIES SECTION -->
+
+<div id="photos" class="hidden">
+
+
+<h1>
+Our Beautiful Memories ❤️
+</h1>
+
+
+<p>
+Every picture tells a story of moments I will always treasure.
+</p>
+
+
+<div id="gallery"></div>
+
+
+
+<button onclick="birthday()">
+
+One Last Surprise 🎁
+
+</button>
+
+
+</div>
+
+
+
+
+
+
+
+
+<!-- FINAL SURPRISE -->
+
+
+<div id="final" class="hidden">
+
+
+<h1>
+Happy Birthday Esther 🎂❤️
+</h1>
+
+
+<p>
+
+My beautiful Esther,
+
+<br><br>
+
+Happy birthday ❤️
+
+<br><br>
+
+Today is all about celebrating you.
+
+Your smile, your kindness, your heart, and everything that makes you amazing.
+
+<br><br>
+
+Even though you are in Paris and I am in California,
+
+I hope you feel how loved and special you are.
+
+<br><br>
+
+Thank you for being part of my life.
+
+<br><br>
+
+I pray this new year brings you:
+
+<br>
+
+✨ Happiness
+
+<br>
+
+✨ Peace
+
+<br>
+
+✨ Success
+
+<br>
+
+✨ Beautiful memories
+
+<br><br>
+
+I love you so much my Ibadan girl ❤️
+
+</p>
+
+
+
+<a href="https://youtu.be/WCRnsYEKr8A" target="_blank">
+
+<button>
+
+🎵 Listen To Your Song
+
+</button>
+
+
+</a>
+
+
+</div>
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+<script>
+
+
+
+// ==============================
+// COUNTDOWN
+// ==============================
+
+
+let birthdayTime =
+new Date("July 14, 2026 00:00:00 GMT+0200").getTime();
+
+
+
+let timer=setInterval(function(){
+
+
+let now=new Date().getTime();
+
+
+let distance=birthdayTime-now;
+
+
+
+if(distance <= 0){
+
+
+clearInterval(timer);
+
+
+hideAll();
+
+
+document.getElementById("start")
+.classList.remove("hidden");
+
+
+return;
+
+}
+
+
+
+
+let days=Math.floor(
+distance/(1000*60*60*24)
+);
+
+
+let hours=Math.floor(
+(distance%(1000*60*60*24))/(1000*60*60)
+);
+
+
+let minutes=Math.floor(
+(distance%(1000*60*60))/(1000*60)
+);
+
+
+let seconds=Math.floor(
+(distance%(1000*60))/1000
+);
+
+
+
+document.getElementById("countdown").innerHTML=
+
+days+" Days ❤️ "+
+hours+" Hours ❤️ "+
+minutes+" Minutes ❤️ "+
+seconds+" Seconds";
+
+
+
+},1000);
+
+
+
+
+
+
+
+
+
+// ==============================
+// PAGE CONTROL
+// ==============================
+
+
+
+function hideAll(){
+
+
+let pages=[
+
+"countdownPage",
+"start",
+"message",
+"letter",
+"photos",
+"final"
+
+];
+
+
+
+pages.forEach(function(page){
+
+
+document.getElementById(page)
+.classList.add("hidden");
+
+
+});
+
+
+}
+
+
+
+
+
+
+function openMessage(){
+
+
+hideAll();
+
+
+document.getElementById("message")
+.classList.remove("hidden");
+
+
+}
+
+
+
+
+
+
+
+function letter(){
+
+
+hideAll();
+
+
+document.getElementById("letter")
+.classList.remove("hidden");
+
+
+document.getElementById("typing").innerHTML="";
+
+
+i=0;
+
+
+typeWriter();
+
+
+}
+
+
+
+
+
+
+
+function photos(){
+
+
+hideAll();
+
+
+document.getElementById("photos")
+.classList.remove("hidden");
+
+
+}
+
+
+
+
+
+
+function birthday(){
+
+
+hideAll();
+
+
+document.getElementById("final")
+.classList.remove("hidden");
+
+
+}
+
+
+
+
+
+
+
+
+
+
+// ==============================
+// LOVE LETTER
+// ==============================
+
+
+
+let text=
+
+"Abake ❤️\n\n"+
+
+"From the moment you came into my life, "+
+
+"you brought happiness and beautiful moments.\n\n"+
+
+"Your smile makes my days brighter, "+
+
+"and your heart is something I truly admire.\n\n"+
+
+"Even though California and Paris are far apart, "+
+
+"distance cannot change how special you are to me. ❤️";
+
+
+
+let i=0;
+
+
+
+function typeWriter(){
+
+
+if(i < text.length){
+
+
+document.getElementById("typing").innerHTML +=
+text.charAt(i);
+
+
+
+i++;
+
+
+setTimeout(typeWriter,50);
+
+
+}
+
+
+}
+
+
+
+
+
+
+
+
+// ==============================
+// MEMORY PHOTOS
+// ==============================
+
+
+
+let memories=[
+
+
+{
+
+image:"photos/photo1.jpeg",
+
+title:"The Beginning ❤️",
+
+text:"Every beautiful story starts with a special moment. Our first date you look so gorgeous"
+
+},
+
+
+
+{
+
+image:"photos/photo2.jpeg",
+
+title:"Beautiful Memories 🌹",
+
+text:"Every smile and every conversation became something I treasure."
+
+},
+
+
+
+{
+
+image:"photos/photo3.jpeg",
+
+title:"Moments With You ❤️",
+
+text:"Some memories become unforgettable because of the person beside you. Remember you said Yes to me on this day!!"
+
+},
+
+
+
+{
+
+image:"photos/photo4.jpeg",
+
+title:"Distance Cannot Change Love 🌎",
+
+text:"California to Paris is only distance, not a barrier."
+
+},
+
+
+
+{
+
+image:"photos/photo5.jpeg",
+
+title:"Forever Special ❤️",
+
+text:"I am grateful for every moment we share."
+
+},
+
+
+
+{
+
+image:"photos/photo6.jpeg",
+
+title:"Another Beautiful Memory 🌹",
+
+text:"This moment will always have a special place in my heart."
+
+},
+
+
+
+{
+
+image:"photos/photo7.jpeg",
+
+title:"Your Smile ❤️",
+
+text:"Your happiness is one of my favorite things. OMG YOU ARE SO BEAUTIFUL!!"
+
+},
+
+
+
+{
+
+image:"photos/photo8.jpeg",
+
+title:"Forever Memories ❤️",
+
+text:"More beautiful moments waiting for us."
+
+}
+
+
+];
+
+
+
+
+
+let gallery=document.getElementById("gallery");
+
+
+
+memories.forEach(function(memory){
+
+
+let card=document.createElement("div");
+
+
+card.className="memory";
+
+
+
+let image=document.createElement("img");
+
+
+image.src=memory.image;
+
+
+image.className="photo";
+
+
+
+image.onerror=function(){
+
+this.style.display="none";
+
+};
+
+
+
+let title=document.createElement("h2");
+
+
+title.innerHTML=memory.title;
+
+
+
+let caption=document.createElement("p");
+
+
+caption.className="caption";
+
+
+caption.innerHTML=memory.text;
+
+
+
+card.appendChild(image);
+
+
+card.appendChild(title);
+
+
+card.appendChild(caption);
+
+
+
+gallery.appendChild(card);
+
+
+
+});
+// ==============================
+// FALLING HEART ANIMATION
+// ==============================
+
+
+function createHeart(){
+
+
+let heart=document.createElement("div");
+
+
+heart.className="heart";
+
+
+heart.innerHTML="❤️";
+
+
+
+heart.style.left=Math.random()*100+"vw";
+
+
+
+heart.style.fontSize=
+(Math.random()*25+15)+"px";
+
+
+
+heart.style.animationDuration=
+(Math.random()*3+5)+"s";
+
+
+
+document.body.appendChild(heart);
+
+
+
+setTimeout(function(){
+
+
+heart.remove();
+
+
+},8000);
+
+
+
+}
+
+
+
+
+setInterval(createHeart,500);
+
+
+
+
+
+</script>
+
+
+</body>
+
+
+</html>
